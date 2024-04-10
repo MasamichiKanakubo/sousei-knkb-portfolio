@@ -1,0 +1,91 @@
+/* box-sizing を指定する */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body.cover-page {
+  margin: 0;
+  padding: 0; 
+}
+
+/* 表紙のページのスタイルを指定する */
+.cover-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .header {
+    background-color: hsl(235, 100%, 96%);
+    padding: 1% 5%;
+    flex: 0 0 auto;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+
+  .content {
+    padding: 0 5%;
+    flex: 1 1 auto;
+  }
+
+  .footer {
+    background-color: hsl(235, 100%, 96%);
+    flex: 0 0 auto;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* namebox 氏名を記述する */
+  /* マウスカーソルをポインタとし，テキストの選択も不可とする．*/
+  .namebox {
+    cursor: pointer;
+    user-select: none;
+    margin: 1rem;
+    padding: 0 0.2rem;
+  }
+
+  /* マウスを移動した時にアウトラインを表示する． */
+  .namebox:hover {
+    outline: 1px dotted hsl(235, 100%, 50%);
+  }
+
+  /* 表紙のリンクを配置する */
+  .linkbox {
+    margin: 1rem 0;
+    padding: 1rem;
+    outline: 1px solid hsl(235, 100%, 47%);
+    border-radius: 8px;
+  }
+
+  /* リンク */
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a::before {
+    content: "\2192";
+  }
+}
+
+/* 適宜CSSの定義を追加する．*/
+/* ここから */
+
+
+
+
+
+/* ここまで */
