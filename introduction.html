@@ -11,14 +11,17 @@
   <link rel="icon" href="./img/IMG_3630.jpg">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  
 
-
+  <style>
+  .wide-card {
+      width: 50%;
+  }  
+</style>
   <!-- ここまで -->
 </head>
 <body>
   <div class="container mt-5">
-    <h1 class="text-center mb-4">金久保仁理</h1>
+    <h1 class="text-center mb-4">Hi, I'm 金久保仁理 .</h1>
     <div class="row">
       <!-- 画像のカラム -->
       <div class="col-md-6">
@@ -26,31 +29,58 @@
       </div>
 
       <!-- カードのカラム -->
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            基本情報
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">生年月日</h5>
-            <p class="card-text">2004年9月29日</p>
-
-            <h5 class="card-title">出身地</h5>
-            <p class="card-text">三重県亀山市</p>
-
-            <h5 class="card-title">出身高校</h5>
-            <p class="card-text">鈴鹿高等学校</p>
-
-            <h5 class="card-title">好きな食べ物</h5>
-            <p class="card-text">肉じゃが</p>
-
-            <h5 class="card-title">得意な技術</h5>
-            <p class="card-text">Python, TypeScript</p>
-
-            <h5 class="card-title">Github</h5>
-            <a href="https://github.com/MasamichiKanakubo">Masamichi Kanakubo</a>
-          </div>
+      <div class="card wide-card">
+        <div class="card-header">
+          基本情報
         </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">生年月日</h5>
+              <p class="">2004年9月29日</p>
+            </div>
+            <div class="col-6">
+              <h5 class="card-title">出身地</h5>
+              <p class="">三重県亀山市</p>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">出身高校</h5>
+              <p class="">鈴鹿高等学校</p>
+            </div>
+            <div class="col-6">
+              <h5 class="card-title">好きな食べ物</h5>
+              <p class="">肉じゃが</p>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">得意な技術</h5>
+              <ul>
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>GCP, Kubernetes</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h5 class="">Github</h5>
+              <a href="https://github.com/MasamichiKanakubo">Masamichi Kanakubo</a>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">春セメスターの時間割</h5>
+              <a href="./spring-timetable.html">時間割</a>
+            </div>
+            <div class="col-6">
+              <h5 class="card-title">趣味</h5>
+              <a href="./hobby.html">趣味のページ</a>
+            </div>      
+          </div>
       </div>
     </div>
   </div>

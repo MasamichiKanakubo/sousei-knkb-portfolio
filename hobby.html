@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>開発ポートフォリオ</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Vue.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <link rel="icon" href="img/vue-icon.png">
+</head>
+<body>
+
+<div id="app" class="container mt-5">
+  <h1 class="text-center mb-4">趣味の開発ページ</h1>
+  
+  <div class="row">
+    <!-- プロジェクトのカードをv-forディレクティブでループ表示 -->
+    <div class="col-md-4 mb-4" v-for="project in projects">
+      <div class="card h-100">
+        <img :src="project.image" class="card-img-top" :alt="project.name">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.name }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+        </div>
+        <div class="card-footer">
+          <a :href="project.deployedUrl" target="_blank" class="btn btn-primary">サイトを見る</a>
+          <a :href="project.githubUrl" target="_blank" class="btn btn-secondary">Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Vue CDN-->
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      projects: [
+        {
+          name: 'Moodhub',
+          description: '誰とでも盛り上がれる曲をレコメンドできる選曲検索エンジン',
+          image: 'https://lh6.googleusercontent.com/proxy/YtsF-UCvj2mKi-ac9QZNx6etWIDvQ0WKpLpkWOG90IBd5JrkFdD74satjIlvWSkS3jXD4RoisafmsYjCAshDr3ZouQjHJY20QSGkRpr4rg',
+          deployedUrl: 'https://mood-hub-watnow.vercel.app/',
+          githubUrl: 'https://github.com/MasamichiKanakubo/moodhub-backend'
+        },
+        {
+          name: "TAXMAN",
+          description: "学生向け税金FAQアプリです。AI+類義語スクレイピング+文書拡張で必ず税金に関する問題を解決します。",
+          image: "https://i.gyazo.com/53034fe7cd8a7c98bcd7c74eca39ff50.png",
+          deployedUrl: "https://tax-man.vercel.app/",
+          githubUrl: "https://github.com/MasamichiKanakubo/FAQ-odoshari-backend"
+        },
+        {
+          name: "新歓FAQ AIオタ姫ちゃん",
+          description: "新入生向けのFAQアプリです。AIで質問に答えます。",
+          image: "img/アーキテクチャ図一覧 (1).png",
+          deployedUrl: "https://www.canva.com/design/DAF_FgVcdfo/ryo_Mi4wjuVbiQ5BbzRWnw/edit?utm_content=DAF_FgVcdfo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+          githubUrl: "https://github.com/MasamichiKanakubo/christian"
+        }
+      ]
+    }
+  });
+</script>
+
+<!-- Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/umd.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
