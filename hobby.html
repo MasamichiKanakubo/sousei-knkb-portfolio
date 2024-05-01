@@ -16,7 +16,7 @@
   <h1 class="text-center mb-4">趣味の開発ページ</h1>
   
   <div class="row">
-    <!-- プロジェクトのカードをv-forディレクティブでループ表示 -->
+    <!-- v-forでVueインスタンスに私たprojects一覧を展開 -->
     <div class="col-md-4 mb-4" v-for="project in projects">
       <div class="card h-100">
         <img :src="project.image" class="card-img-top" :alt="project.name">
@@ -31,6 +31,8 @@
       </div>
     </div>
   </div>
+
+  <a href="./introduction.html">自己紹介ページに戻る</a>
 
 </div>
 
