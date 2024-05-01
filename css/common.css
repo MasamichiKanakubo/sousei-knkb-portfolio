@@ -86,6 +86,53 @@ body.cover-page {
 
 
 
+.block {
+  float: right;
+}
+body {
+  background-color: #f0f2f5; /* 背景色を明るいグレーに設定 */
+  color: #333; /* テキストカラー */
+}
 
+h1 {
+  color: #205081; /* タイトルの色 */
+  margin-bottom: 40px; /* 下マージンを追加 */
+}
 
-/* ここまで */
+img {
+  border-radius: 10px; /* 画像の角を丸くする */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 影を追加 */
+}
+
+.card {
+  margin-top: 20px; /* カードの上の余白を調整 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* カードに影を追加 */
+  border: none; /* ボーダーを消す */
+}
+
+.card-header {
+  background-color: #205081; /* ヘッダーの背景色を設定 */
+  color: white; /* ヘッダーのテキストカラーを白に */
+  font-size: 1.25rem; /* ヘッダーフォントサイズを大きく */
+}
+
+.card-body {
+  padding: 20px; /* カードの内側の余白を設定 */
+}
+
+.card-title {
+  color: #205081; /* カードタイトルの色を濃い青に */
+}
+
+a {
+  color: #205081; /* リンクの色 */
+  text-decoration: none; /* 下線を消す */
+}
+
+a:hover {
+  text-decoration: underline; /* ホバーで下線を表示 */
+}
+
+.wide-card {
+  width: 50%;
+}  

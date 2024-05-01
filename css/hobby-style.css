@@ -1,0 +1,58 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: #205081;
+}
+
+.card {
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background-color: #205081;
+  border-color: #205081;
+}
+
+.btn-primary:hover {
+  background-color: #092948;
+  border-color: #092948;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}    
+
+a {
+  color: #205081;
+}

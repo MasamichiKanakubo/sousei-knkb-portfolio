@@ -1,0 +1,41 @@
+    
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #205081; 
+}
+
+table {
+    background-color: white; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* 影 */
+}
+
+th {
+    background-color: #205081; /* 背景 */
+    color: white; 
+    text-align: center;
+}
+
+td {
+    text-align: center; /* 中央揃え */
+    vertical-align: middle; /* 垂直中央寄せ */
+}
+
+a {
+    display: block; 
+    text-align: center;
+    margin-top: 20px;
+    color: #205081;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; /* ホバー時に下線追加 */
+}
