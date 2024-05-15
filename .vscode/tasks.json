@@ -11,7 +11,7 @@
             "args": ["-ExecutionPolicy", "Bypass"]
           }
         },
-        "command":  "${workspaceFolder}\\.vscode\\create-zip.ps1 -DestinationPath \"\\\"${workspaceFolderBasename}_$(Get-Date -UFormat %y%m%d%H%M%S)\\\"\" -SourcePath ${workspaceFolder}"
+        "command": "${workspaceFolder}\\.vscode\\create-zip.ps1 -DestinationPath \"\\\"${workspaceFolderBasename}_$(Get-Date -UFormat %y%m%d%H%M%S)\\\"\" -SourcePath ${workspaceFolder}"
       },
       "osx": {
         "options": {
@@ -20,7 +20,7 @@
             "args": ["-c"]
           }
         },
-        "command": "zip -X -r ${workspaceFolderBasename}_`date +\"%y%m%d%H%M%S\"`.zip . -x \"*.zip\" \"*.DS_Store\""
+        "command": "zip -X -r ${workspaceFolderBasename}_`date +\"%y%m%d%H%M%S\"`.zip . -x \"*.zip\" \"*.DS_Store\" \".git/*\""
       },
       "linux": {
         "options": {
@@ -29,7 +29,7 @@
             "args": ["-c"]
           }
         },
-        "command": "zip -X -r ${workspaceFolderBasename}_`date +\"%y%m%d%H%M%S\"`.zip . -x *.zip"
+        "command": "zip -X -r ${workspaceFolderBasename}_`date +\"%y%m%d%H%M%S\"`.zip . -x \"*.zip\" \".git/*\""
       },
       "problemMatcher": []
     }
