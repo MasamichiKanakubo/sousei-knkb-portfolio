@@ -7,3 +7,8 @@
 ## Deploy Link
 https://knkb-portflio.netlify.app/
 
+## Repositoy
+https://github.com/MasamichiKanakubo/sousei-knkb-portfolio
+
+## 使用技術
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,vue,bootstrap)](https://skillicons.dev)
